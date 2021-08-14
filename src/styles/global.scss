@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,400i,700|EB+Garamond");
+
+$white: #fbfcfd;
+$eerie-black: #262626;
+// $mystic-pale: #f5efea;
+
+// $red: #b3001b;
+// $blue: #255c99;
+// $green: #4c956c;
+// $orange: #b04e17;
+// $superorange: #f19346;
+// $silver: #808a9f;
+// $violet: #5f4b66;
+// $dark-red: #560c05;
+
+// $grey: $eerie-black;
+// $grey-light: #2e2a29;
+
+// $scheme-main: $mystic-pale;
+
+// // alt theme
+// $green: #3ab449;
+$icy-blue: #e7f5fe;
+// $dark-blue: #13214a;
+// $light-blue: #345199;
+// $blue: $light-blue;
+
+// $scheme-main: $icy-blue;
+
+// // alt theme third
+// $green: #244f43;
+// $light-green: #0b3a2c;
+// $white: #f8faf7;
+// $white: #fbfcfd;
+
+// $scheme-main: $white;
+// // $scheme-main-bis: $green;
+// $footer-color: $white;
+
+// // redefinitions
+// $primary: $green;
+// $info: $green;
+// $link: $green;
+
+// $success: $green;
+// $warning: $orange;
+// $danger: $red;
+
+// $family-sans-serif: "Quicksand", sans-serif;
+// $family-serif: "EB Garamond", serif;
+
+// $title-family: $family-serif;
+// $title-weight: 500;
+
+// $navbar-item-img-max-height: 2rem;
+// $navbar-height: 2rem;
+
+@import "~bulma";
+@import "@creativebulma/bulma-tooltip";
+
+.navbar {
+  min-height: unset;
+}
+
+// @import "~bulma-switch";
+// @import "~bulma-tooltip";
+// @import "@creativebulma/bulma-badge";
+// @import "node_modules/bulma-slider/dist/css/bulma-slider.sass";
+// @import "./src/components/SignupForm.scss";
+
+.my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.is-underline {
+  text-decoration: underline;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  min-height: 85vh;
+}
+
+.slate {
+  .block {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    border: 1px solid rgba($eerie-black, 0);
+
+    transition: border-color 0.4s linear;
+
+    // border: 1px solid rgba($eerie-black, 0.05); //dev
+  }
+
+  // .needs-refresh {
+  //   border: 2px solid red;
+  // }
+
+  .is-inactive .block {
+    border: 1px solid rgba($eerie-black, 0.05);
+  }
+
+  .block-subject {
+    font-size: 0.9rem;
+    position: absolute;
+    background-color: #fafafa; //$scheme-main;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    > a {
+      opacity: 0;
+      color: $eerie-black;
+      transition: opacity 0.4s linear;
+
+      // opacity: 0.3; //dev
+    }
+  }
+
+  .is-inactive .block-subject > a {
+    opacity: 0.3;
+  }
+
+  .internallink-open {
+    // padding: 0.5rem;
+    text-align: center;
+
+    // a {
+    //   padding: 0.5rem;
+    //   background-color: $green;
+    //   color: $white;
+    //   border-radius: 0.5rem;
+    // }
+  }
+
+  .autocomplete-portal {
+  }
+
+  .autocomplete-item {
+    width: 100%;
+  }
+}
+
+.panes-editor {
+  overflow-x: scroll;
+}
+
+.footer {
+  background-color: $green;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $icy-blue;
+    }
+  }
+}
+
+.formkit-form[data-uid="d31cced469"] {
+  margin: auto;
+}
+
+.floating {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fullscreen {
+  min-height: 100vh;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.editor-column {
+  padding: 2rem;
+}
+
+.note-head {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.opacity-half {
+  opacity: 0.5;
+}
+
+ul.folder-navigation {
+  padding-left: 0;
+
+  ul {
+    padding-left: 1.5rem;
+    display: block;
+  }
+  li {
+    display: block;
+  }
+}
