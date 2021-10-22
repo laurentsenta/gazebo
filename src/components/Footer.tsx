@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
             <div className="column">
               <a
                 href="https://www.twitter.com/laurentsenta"
-                rel="nofollow noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 title="twitter"
               >
@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
             <div className="column">
               <a
                 href="https://www.laurentsenta.com"
-                rel="nofollow noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 title="website"
               >
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
             <div className="column">
               <a
                 href="https://www.linkedin.com/in/laurentsenta"
-                rel="nofollow noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 title="linkedin"
               >

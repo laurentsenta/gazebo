@@ -38,6 +38,7 @@ export const Header: React.FC = () => {
         <div className="navbar-brand">
           <Link href="/">
             <a className="navbar-item">
+              <img src="/logo.png" width="32" height="32" />
               <span>{NEXT_PUBLIC_SITE_TITLE}</span>
             </a>
           </Link>

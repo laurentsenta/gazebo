@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import React from "react";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -21,7 +20,6 @@ export const MainPage: React.FC<{ isEditor?: boolean }> = ({ children, isEditor 
           crossOrigin="anonymous"
         />
       </Head>
-      <Script async data-uid="dfc2f8c5b5" src="https://singulargarden.ck.page/dfc2f8c5b5/index.js"></Script>
       <Header />
       {isEditor
         ? <>{children}</>

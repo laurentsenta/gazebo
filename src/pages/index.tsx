@@ -1,4 +1,3 @@
-import { ExternalLink } from "@c/DemoUtils";
 import { MainPage } from "@c/MainPage";
 import { ConvertScript } from "@gazebo/nextjs/useScript";
 import type { NextPage } from "next";
@@ -26,10 +25,9 @@ const Content = () => {
           <div className="container">
             <div className="columns is-vcentered is-centered">
               <div className="column has-text-centered is-8">
-                <h1 className="title is-1">Gazebo, A loosely structured toolbox<br />for web app dev.</h1>
+                <h1 className="title is-1">Gazebo,<br />A toolbox for web app dev.</h1>
                 <h2 className="subtitle my-3 is-5">
-                  A portfolio of tools you may use to build webapps.<br />
-                  <ExternalLink href="https://laurentsenta.com">me</ExternalLink> hope this helps.
+                  A portfolio of bricks I tend to use again and again.
                 </h2>
               </div>
             </div>
