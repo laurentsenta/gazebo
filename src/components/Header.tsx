@@ -4,6 +4,7 @@ import { HideInProd } from "@gazebo/release";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useCallback, useState } from "react";
+import { ExternalLink } from "./DemoUtils";
 import { BulmaLink } from "./link";
 
 const NEXT_PUBLIC_SITE_TITLE = process.env.NEXT_PUBLIC_SITE_TITLE;
@@ -80,6 +81,9 @@ export const Header: React.FC = () => {
                 </BulmaLink>
               </AuthSwitch>
             </HideInProd>
+            <ExternalLink href="https://github.com/laurentsenta/gazebo" className="navbar-item">
+              <i className="fab fa-github"></i>
+            </ExternalLink>
             <div className={`navbar-item has-dropdown is-hoverable`}>
               <a className="navbar-link">
                 <i className="fas fa-cog"></i>

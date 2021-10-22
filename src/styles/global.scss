@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,400i,700|EB+Garamond");
+// @import url("https://fonts.googleapis.com/css?family=Quicksand:400,400i,700|EB+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro:300,400,700&display=swap");
+
+$family-sans-serif: "Source Sans Pro", sans-serif;
+$family-serif: "Libre Baskerville", serif;
 
 $white: #fbfcfd;
+$purple: #553b82;
+$green: #5c9f41;
+$yellow: #f1b61c;
+$blue: #3e557e;
+$sombre: #2a2726;
+$BLUE: #1200ed;
+
 $eerie-black: #262626;
 // $mystic-pale: #f5efea;
 
@@ -37,7 +48,13 @@ $icy-blue: #e7f5fe;
 // // $scheme-main-bis: $green;
 // $footer-color: $white;
 
-// // redefinitions
+// redefinitions
+// =============
+
+$primary: $green;
+$link: $primary;
+$info: $yellow;
+
 // $primary: $green;
 // $info: $green;
 // $link: $green;
@@ -52,8 +69,8 @@ $icy-blue: #e7f5fe;
 // $title-family: $family-serif;
 // $title-weight: 500;
 
-// $navbar-item-img-max-height: 2rem;
-// $navbar-height: 2rem;
+$navbar-item-img-max-height: 2rem;
+$navbar-height: 2rem;
 
 @import "~bulma";
 @import "@creativebulma/bulma-tooltip";
