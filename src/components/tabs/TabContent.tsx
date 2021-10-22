@@ -7,7 +7,7 @@ export const TabContent: React.FC<{}> = () => {
     const onClick = useCallback(() => window.alert('Thanks for double clicking!'), [])
 
     return <div className="columns is-multiline">
-        <CardDemo title="Double Confirmation Button" demo="tabs/TabContent.tsx#15" code="gazebo/react/content/DoubleConfirmationButton.tsx">
+        <CardDemo title="Double Confirmation Button" demo="components/tabs/TabContent.tsx#L17" code="gazebo/react/content/DoubleConfirmationButton.tsx">
             <CardDescription>
                 I really like this button: instead of showing a modal for a confirmation, just show a nice <em>are you sure?</em> message.<br />
                 This might be against some UX rule, but I find modals ugly and annoying. Especially when you try to
@@ -26,7 +26,7 @@ export const TabContent: React.FC<{}> = () => {
                 do not take this as a confirmation.
             </p>
         </CardDemo>
-        <CardDemo title="Textarea that auto-resize" demo="tabs/TabContent.tsx#26" code="gazebo/react/content/TextareaAutosize.tsx">
+        <CardDemo title="Textarea that auto-resize" demo="components/tabs/TabContent.tsx#L34" code="gazebo/react/content/TextareaAutosize.tsx">
             <CardDescription>
                 This is a <em>regular</em> text area but it will resize itself when you type.
             </CardDescription>
