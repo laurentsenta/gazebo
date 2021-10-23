@@ -1,3 +1,4 @@
+import { CopyURLButtonDemo } from "@c/demo/CopyURLButton";
 import { CardDemo, CardDescription, ExternalLink } from "@c/DemoUtils";
 import { TextareaAutosize } from "@gazebo/react";
 import { DoubleConfirmationButton } from "@gazebo/react/content/DoubleConfirmationButton";
@@ -38,6 +39,16 @@ export const TabContent: React.FC<{}> = () => {
                 every component looks like it was designed exactly for the content it contains.<br />
                 Weird whitespaces and overflow are ugly and that is often what you get when you go from <em>nice figma mockup</em> to <em>real use case</em>.
                 This is helpful.
+            </p>
+        </CardDemo>
+        <CardDemo title="Copy to Clipboard Button" demo="components/tabs/TabContent.tsx#L43" code="gazebo/react/meta/CopyURLButton.tsx">
+            <CardDescription>
+                When you want to encourage users to copy a piece of text.
+            </CardDescription>
+            <div className="block has-text-centered">
+                <CopyURLButtonDemo />
+            </div>
+            <p className="has-text-grey">
             </p>
         </CardDemo>
     </div>

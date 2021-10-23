@@ -6,7 +6,8 @@ export const CopyURLButton: React.FC<{
   url: string;
   targetID?: string;
   title?: string;
-}> = ({ url, targetID, title }) => {
+  tooltip?: string;
+}> = ({ url, targetID, title, tooltip }) => {
   useEffect(() => {
     const clipboard = new ClipboardJS(".copyToClipboard");
     return () => clipboard.destroy();
@@ -30,11 +31,11 @@ export const CopyURLButton: React.FC<{
         <p className="control">
           <button
             className="button is-primary is-outlined copyToClipboard"
-            data-tooltip="Copy a link to this timezone"
+            data-tooltip={tooltip}
             data-clipboard-target={`#${id}`}
           >
             <span className="icon is-small">
-              <i className="fa fa-files-o"></i>
+              <i className="fa fa-copy"></i>
             </span>
           </button>
         </p>
