@@ -1,4 +1,6 @@
 import { MainPage } from "@c/MainPage";
+import { slugify } from "@gazebo/utils/text";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const BASE_CODE_URL = "https://github.com/laurentsenta/gazebo/tree/main/src/"
@@ -25,8 +27,12 @@ export const CardDemo: React.FC<{ title: string, demo?: string, code?: string }>
                 <nav className="level">
                     <div className="level-left">
                         <div className="level-item">
-                            <h2 className="title is-size-4">
-                                {title}
+                            <h2 className="title is-size-4" id={slugify(title)}>
+                                <Link href={`#${slugify(title)}`}>
+                                    <a>
+                                        {title}
+                                    </a>
+                                </Link>
                             </h2>
                         </div>
                     </div>
