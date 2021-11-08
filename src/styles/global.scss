@@ -117,25 +117,19 @@ main {
   min-height: 85vh;
 }
 
-.slate {
+.garden-editor {
+  font-size: 1.2rem;
+
   .block {
-    font-size: 1.2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     position: relative;
-    border: 1px solid rgba($eerie-black, 0);
-
+    border: 1px solid rgba($eerie-black, 0.05);
     transition: border-color 0.4s linear;
-
-    // border: 1px solid rgba($eerie-black, 0.05); //dev
   }
 
-  // .needs-refresh {
-  //   border: 2px solid red;
-  // }
-
   .is-inactive .block {
-    border: 1px solid rgba($eerie-black, 0.05);
+    border: 1px solid rgba($eerie-black, 0.3);
   }
 
   .block-subject {
@@ -150,7 +144,7 @@ main {
       color: $eerie-black;
       transition: opacity 0.4s linear;
 
-      // opacity: 0.3; //dev
+      opacity: 0.3; //dev
     }
   }
 

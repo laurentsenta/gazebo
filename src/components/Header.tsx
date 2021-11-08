@@ -8,15 +8,17 @@ import { ExternalLink } from "./DemoUtils";
 import { BulmaLink } from "./link";
 
 const NEXT_PUBLIC_SITE_TITLE = process.env.NEXT_PUBLIC_SITE_TITLE;
-const NEXT_PUBLIC_APP_VERSION = '0.1.0'
+const NEXT_PUBLIC_APP_VERSION = "0.1.0";
 
 const PublicGarden = () => {
-  const userId = useUserId()
+  const userId = useUserId();
 
-  return <BulmaLink href={`/user/${userId}`}>
-    <a className="navbar-item">Public Garden</a>
-  </BulmaLink>
-}
+  return (
+    <BulmaLink href={`/user/${userId}`}>
+      <a className="navbar-item">Public Garden</a>
+    </BulmaLink>
+  );
+};
 
 export const Header: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -33,7 +35,11 @@ export const Header: React.FC = () => {
   }, [setVisible]);
 
   return (
-    <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar is-light"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="container">
         <div className="navbar-brand">
           <Link href="/">
@@ -59,11 +65,9 @@ export const Header: React.FC = () => {
             <BulmaLink href="/theme">
               <a className="navbar-item">Theme</a>
             </BulmaLink>
-            <HideInProd>
-              <BulmaLink href="/slate">
-                <a className="navbar-item">Slate</a>
-              </BulmaLink>
-            </HideInProd>
+            <BulmaLink href="/slate">
+              <a className="navbar-item">Slate</a>
+            </BulmaLink>
             <BulmaLink href="/react">
               <a className="navbar-item">React</a>
             </BulmaLink>
@@ -82,7 +86,10 @@ export const Header: React.FC = () => {
                 </BulmaLink>
               </AuthSwitch>
             </HideInProd>
-            <ExternalLink href="https://github.com/laurentsenta/gazebo" className="navbar-item">
+            <ExternalLink
+              href="https://github.com/laurentsenta/gazebo"
+              className="navbar-item"
+            >
               <i className="fab fa-github"></i>
             </ExternalLink>
             <div className={`navbar-item has-dropdown is-hoverable`}>
@@ -92,16 +99,19 @@ export const Header: React.FC = () => {
               <div className="navbar-dropdown is-right">
                 <div className="navbar-item">
                   <AuthSwitch none loading>
-                    <button className="button is-small is-primary is-light is-loading"
-                      style={{ width: '100%' }}
+                    <button
+                      className="button is-small is-primary is-light is-loading"
+                      style={{ width: "100%" }}
                     >
                       Loading
                     </button>
                   </AuthSwitch>
                   <AuthSwitch anonymous>
                     <BulmaLink href="/signin">
-                      <a className="button is-small is-primary"
-                        style={{ width: '100%' }}>
+                      <a
+                        className="button is-small is-primary"
+                        style={{ width: "100%" }}
+                      >
                         <strong>Sign up</strong>
                       </a>
                     </BulmaLink>
@@ -109,7 +119,7 @@ export const Header: React.FC = () => {
                   <AuthSwitch logged>
                     <button
                       className="button is-small is-primary is-light"
-                      style={{ width: '100%' }}
+                      style={{ width: "100%" }}
                       onClick={doSignout}
                     >
                       Signout
@@ -125,6 +135,6 @@ export const Header: React.FC = () => {
           </div>
         </div>
       </div>
-    </nav >
+    </nav>
   );
 };
